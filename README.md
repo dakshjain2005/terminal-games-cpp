@@ -1,78 +1,37 @@
 
-<h1 align="center">
-🎮 Terminal Games in C++
-</h1>
+# 🎮 Terminal Games in C++ (terminal-games-cpp)
 
-<p align="center">
-A collection of beginner-friendly terminal games made using <b>C++</b> 🖥️ <br>
-Play right inside your terminal and relive the classics!
-</p>
+Welcome to **Terminal Games in C++**, a collection of simple but addictive games you can play directly in your terminal! 🚀  
+This project is aimed at beginners who want to learn game development using C++ and terminal rendering techniques.
 
-<p align="center">
-🚀 Tic Tac Toe • 🐍 TermiSnake • More coming soon...
-</p>
+## 📦 Games Included
 
----
+### 🐍 TermiSnake
+A classic Snake game that runs in your terminal using `ncurses`.
 
-## 🎯 Games Included
+![TermiSnake Preview](https://github.com/dakshjain2005/terminal-games-cpp/assets/snake-preview.gif)
 
-### 🟡 Tic Tac Toe (`tic-tac-toe/`)
-```
-Player 1 vs Player 2 in a 3x3 grid of mind games 🧠
-- 📦 Number-pad style input (1-9)
-- ✅ Win detection in rows, columns, and diagonals
-- 🤝 Tie detection
-```
-> 💡 Simple logic, 2D arrays, and conditionals — great for beginners!
+### ❌ TicTacToe
+The evergreen TicTacToe game for two players — now in your terminal!
+
+![TicTacToe Preview](https://github.com/dakshjain2005/terminal-games-cpp/assets/tictactoe-preview.gif)
 
 ---
 
-### 🟢 TermiSnake (`termisnake/`)
-```
-A classic snake game right inside your terminal! 🐍
-- ⌨️ WASD or Arrow key movement
-- 🍎 Eat fruit to grow your snake
-- ☠️ Collisions end the game
-- 🎯 Score tracked in real-time
-```
-> Uses `ncurses` for real-time terminal control!
-
----
-
-## 🧪 Demo
-
-> 📹 Add GIFs or screen recordings here later  
-> Example (ASCII preview):
-
-```text
-   X | O | 3
-  ---|---|---
-   4 | X | 6
-  ---|---|---
-   7 | 8 | X
-
-💥 Player 1 wins!
-```
-
----
-
-## 🚀 How to Run
-
-1️⃣ Compile:
+## 🛠 How to Run
 
 ```bash
-g++ filename.cpp -o gamename
-```
+# Clone the repo
+git clone https://github.com/dakshjain2005/terminal-games-cpp.git
+cd terminal-games-cpp
 
-2️⃣ Run:
+# Compile and run TermiSnake
+g++ termisnake.cpp -lncurses -o termisnake
+./termisnake
 
-```bash
-./gamename
-```
-
-🧩 For TermiSnake (requires `ncurses`):
-```bash
-sudo apt install libncurses5-dev libncursesw5-dev
+# Compile and run TicTacToe
+g++ tictactoe/tictactoe.cpp -o tictactoe
+./tictactoe
 ```
 
 ---
@@ -81,41 +40,31 @@ sudo apt install libncurses5-dev libncursesw5-dev
 
 ```
 terminal-games-cpp/
-├── tic-tac-toe/
-│   └── tictactoe.cpp
-├── termisnake/
-│   └── termisnake.cpp
-└── README.md
+│
+├── termisnake.cpp              # TermiSnake main file
+├── tictactoe/
+│   └── tictactoe.cpp           # TicTacToe source
+├── README.md                   # Main Readme
+├── TermiSnake_README.md        # TermiSnake detailed Readme
+├── TicTacToe_README.md         # TicTacToe detailed Readme
+├── LICENSE                     # MIT License
+└── .gitignore                  # Ignore build files
 ```
-
----
-
-## 🌱 Learning Outcomes
-
-- Game Loops & Logic 🔁  
-- 2D Arrays & Grid Mapping 🎯  
-- Terminal I/O & Key Detection ⌨️  
-- `ncurses` Real-time Input 📡  
-- Clean Modular C++ Code 🧼  
-
----
-
-## 🌟 Coming Soon
-
-- 🏓 Pong
-- ⬛ Tetris
-- 🧠 Hangman
-- 🔢 2048
 
 ---
 
 ## 👨‍💻 Author
 
-**Made with ❤️ by Chief**  
-> Learning by building. Building by coding. 🎯
+- **Daksh Jain** – [@dakshjain2005](https://github.com/dakshjain2005)
 
 ---
 
-<p align="center">
-⭐ Star this repo if you love Terminal Games! ⭐
-</p>
+## 🤝 Contributing
+
+Feel free to open issues, fork the repo and submit PRs for new games or enhancements.
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
